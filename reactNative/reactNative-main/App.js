@@ -7,9 +7,21 @@ import Contact from "./src/screens/Contact";
 import Course from "./src/screens/Course";
 import UserData from "./src/screens/UserData";
 import CourseDetails from "./src/screens/CourseDetails";
+import { useFonts, WorkSans_400Regular } from "@expo-google-fonts/work-sans";
+import { Nunito_700Bold } from "@expo-google-fonts/nunito";
+import AppLoading from "expo-app-loading";
 
 export default function App() {
   const Stack = createNativeStackNavigator();
+
+  let [fontsLoaded] = useFonts({
+    WorkSans_400Regular,
+    Nunito_700Bold,
+  });
+
+  if (!fontsLoaded) {
+    <AppLoading />;
+  }
 
   return (
     <NavigationContainer>
@@ -30,6 +42,7 @@ export default function App() {
           options={{
             headerTitleStyle: {
               fontSize: 25,
+              fontFamily: "Nunito_700Bold",
             },
             headerTitle: "Courses",
             headerTitleAlign: "center",
@@ -43,6 +56,7 @@ export default function App() {
           options={{
             headerTitleStyle: {
               fontSize: 25,
+              fontFamily: "Nunito_700Bold",
             },
             headerTitle: "Students Data",
             headerTitleAlign: "center",
@@ -56,6 +70,7 @@ export default function App() {
           options={{
             headerTitleStyle: {
               fontSize: 25,
+              fontFamily: "Nunito_700Bold",
             },
             headerTitleAlign: "center",
           }}
@@ -68,6 +83,7 @@ export default function App() {
           options={{
             headerTitleStyle: {
               fontSize: 25,
+              fontFamily: "Nunito_700Bold",
             },
             headerTitleAlign: "center",
           }}
@@ -80,6 +96,7 @@ export default function App() {
           options={{
             headerTitleStyle: {
               fontSize: 25,
+              fontFamily: "Nunito_700Bold",
             },
             headerTitleAlign: "center",
           }}
