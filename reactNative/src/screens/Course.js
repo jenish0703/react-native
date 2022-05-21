@@ -58,6 +58,7 @@ const styles = StyleSheet.create({
     width: "100%",
     height: undefined,
     aspectRatio: 1,
+    borderRadius:   10,
   },
   mainContainer: {
     paddingHorizontal: 20,
@@ -65,13 +66,12 @@ const styles = StyleSheet.create({
   },
   courseContainer: {
     padding: 30,
-    // backgroundColor: "rgba(255, 255, 255, 0.90)",
     textAlign: "center",
     borderRadius:   15,
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 0 },
-    shadowOpacity: 0.5,
-    shadowRadius: 8,
+    shadowOpacity: 0.7,
+    shadowRadius: 9,
     elevation: 8,
     marginVertical: 30,
   },

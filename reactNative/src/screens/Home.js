@@ -10,13 +10,22 @@ const Home = () => {
   // console.log(useDimensions(), 'screen');
   return (
     <View style={styles.mainContainer}>
+      <View
+        style={{
+          backgroundColor: '#fff',
+          width: '200%',
+          height: 35,
+          position: 'absolute',
+          let: 90,
+          opacity: 0.1,
+        }}
+      ></View>
       <View style={styles.homeTop}>
         <Image
           style={styles.headerImage}
           resizeMode="contain"
           source={require("../../assets/logo.jpeg")}
         />
-
         <Text style={styles.mainHeader}>Welcome to</Text>
         <Text
           style={[
@@ -40,9 +49,10 @@ const Home = () => {
           style={[
             styles.lineStyle,
             {
-              marginVertical: 10,
+              marginVertical: 8,
             },
-          ]}></View>
+          ]}
+        ></View>
       </View>
     </View>
   );
@@ -71,6 +81,9 @@ const styles = StyleSheet.create({
     alignItems: "stretch",
     marginTop: 50,
     borderRadius: 20,
+    borderColor: "#fff",
+    marginBottom: 10,
+    borderRadius: 5,
   },
   mainHeader: {
     fontSize: 30,
@@ -92,9 +105,9 @@ const styles = StyleSheet.create({
     textShadowRadius: 5,
   },
   lineStyle: {
-    marginBottom: 10,
-    borderWidth: 0.5,
-    borderColor: "grey",
+    marginBottom: 13,
+    borderWidth: 1,
+    borderColor: "#fff",
   },
 });
 

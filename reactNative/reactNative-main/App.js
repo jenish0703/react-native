@@ -32,7 +32,7 @@ export default function App() {
           options={{
             headerShown: false,
           }}>
-          {(props) => <Home {...props} channelName={"Thapa Technical"} />}
+          {(props) => <Home {...props} />}
         </Stack.Screen>
 
         {/* Course Screen  */}

@@ -12,7 +12,7 @@ const UserData = () => {
       );
       const realData = await response.json();
       setMyData(realData);
-      setIsLoaded(false);
+      // setIsLoaded(false);
       // console.log(realData);
     } catch (error) {
       console.log(error);

@@ -1,5 +1,4 @@
 import {
-  Linking,
   StyleSheet,
   Text,
   TouchableOpacity,
