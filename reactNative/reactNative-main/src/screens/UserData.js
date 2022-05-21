@@ -95,12 +95,10 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     backgroundColor: "#353535",
     paddingVertical: 10,
-    fontFamily: "WorkSans_400Regular",
   },
   idNumber: {
     fontSize: 20,
     color: "rgba(255, 255, 255, 0.5)",
-    fontFamily: "WorkSans_400Regular",
     paddingRight: 10,
   },
   bioData: {

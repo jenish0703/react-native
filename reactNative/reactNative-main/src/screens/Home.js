@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image } from "react-native";
+import { StyleSheet, Text, View, Image, Dimensions } from "react-native";
 import React from "react";
 import Menu from "../component/Menu";
 import { useFonts, WorkSans_400Regular } from "@expo-google-fonts/work-sans";
@@ -10,7 +10,7 @@ const Home = (props) => {
     WorkSans_400Regular,
     Nunito_700Bold,
   });
-
+  console.log(Dimensions.get("screen"), 'screen');
   if (!fontsLoaded) {
     <AppLoading />;
   }

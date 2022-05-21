@@ -61,13 +61,14 @@ const styles = StyleSheet.create({
   },
   mainContainer: {
     paddingHorizontal: 20,
+    backgroundColor:'lightslategrey',
   },
   courseContainer: {
     padding: 30,
-    backgroundColor: "rgba(255, 255, 255, 0.90)",
+    // backgroundColor: "rgba(255, 255, 255, 0.90)",
     textAlign: "center",
-    borderRadius: 5,
-    shadowColor: "grey",
+    borderRadius:   15,
+    shadowColor: "#000",
     shadowOffset: { width: 0, height: 0 },
     shadowOpacity: 0.5,
     shadowRadius: 8,
@@ -83,11 +84,11 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   description: {
-    textAlign: "left",
+    textAlign: "center",
     paddingBottom: 15,
     lineHeight: 20,
     fontSize: 16,
-    color: "#7d7d7d",
+    color: "#fff",
   },
   buttonContainer: {
     display: "flex",
@@ -102,6 +103,11 @@ const styles = StyleSheet.create({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    shadowColor: "#000",
+    shadowOffset: { width: 10, height: 5 },
+    shadowOpacity: 1,
+    shadowRadius: 8,
+    elevation: 8,
   },
   buttonText: {
     fontSize: 20,

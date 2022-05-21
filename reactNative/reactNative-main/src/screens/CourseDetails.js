@@ -16,7 +16,7 @@ const CourseDetails = ({ navigation, route }) => {
   }
 
   const id = route.params.courseId;
-  console.log(id);
+  // console.log(id);
 
   const selectedCourse = Courses.find((element) => {
     return id === element.id;

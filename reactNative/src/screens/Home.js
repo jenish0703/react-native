@@ -1,12 +1,13 @@
-import { StyleSheet, Text, View, Image } from "react-native";
+import { StyleSheet, Text, View, Image, Dimensions } from "react-native";
 import React from "react";
 import Menu from "../component/Menu";
+// import { useDimensions } from "@react-native-community/hooks";
 
 const Home = () => {
-
   const description =
     "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. ";
-
+  // useDimensions
+  // console.log(useDimensions(), 'screen');
   return (
     <View style={styles.mainContainer}>
       <View style={styles.homeTop}>
@@ -53,7 +54,7 @@ const styles = StyleSheet.create({
     display: "flex",
     justifyContent: "space-between",
     paddingHorizontal: 20,
-    backgroundColor: "#fff",
+    backgroundColor: "lightslategrey",
     textAlign: "center",
   },
   homeTop: {
@@ -75,14 +76,20 @@ const styles = StyleSheet.create({
     fontSize: 30,
     color: "#344055",
     textTransform: "uppercase",
+    textShadowColor: "#000",
+    textShadowOffset: { width: 4, height: 5 },
+    textShadowRadius: 5,
   },
   paraStyle: {
-    textAlign: "left",
+    textAlign: "center",
     fontSize: 18,
-    color: "#7d7d7d",
+    color: "#fff",
     marginTop: 30,
     paddingBottom: 50,
     lineHeight: 27,
+    textShadowColor: "#000",
+    textShadowOffset: { width: 3, height: 5 },
+    textShadowRadius: 5,
   },
   lineStyle: {
     marginBottom: 10,

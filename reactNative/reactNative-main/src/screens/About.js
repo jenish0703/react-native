@@ -94,6 +94,7 @@ const styles = StyleSheet.create({
   aboutContainer: {
     display: "flex",
     alignItems: "center",
+    backgroundColor:'lightslategrey'
   },
 
   imgStyle: {
